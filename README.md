@@ -1,6 +1,6 @@
 # TRD Config API
 
-# Notes
+## Notes
 
 - Tezos Reward Distribution uses a yaml file for the config of the delegators
 - This software exposes the config file in a Read-Only API
