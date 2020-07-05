@@ -1,11 +1,12 @@
 # TRD Config API
 
-# Tezos Reward Distribution uses a yaml file for the config of the delegators
-# This software exposes the config file in a Read-Only API
-# The API can return all delegators and individual fees or one delegator only
-# This software is licensed under the MIT license and was donated to the community by Proof of Bake
-# Credits to @loginwashere
+# Notes
 
+- Tezos Reward Distribution uses a yaml file for the config of the delegators
+- This software exposes the config file in a Read-Only API
+- The API can return all delegators and individual fees or one delegator only
+- This software is licensed under the MIT license and was donated to the community by Proof of Bake
+- Credits to @loginwashere
 
 ## Installation
 
