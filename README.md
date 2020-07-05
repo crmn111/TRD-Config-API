@@ -1,6 +1,10 @@
-# Tezos config api
+# TRD Config API
 
-## Instalation
+# Tezos Reward Distribution uses a yaml file for the config of the delegators
+# This software exposes the config file in a Read-Only API
+# The API can return all delegators and individual fees or one delegator only
+
+## Installation
 
 - Install `Node.JS` - `sudo apt install nodejs`
 - Install `npm` - `sudo apt install npm`
