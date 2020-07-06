@@ -6,6 +6,7 @@
 - This software exposes the config file in a Read-Only API
 - The API can return all delegators and individual fees or one delegator only
 - This software is licensed under the MIT license and was donated to the community by Proof of Bake
+- Credits to the authors and maintainers of the great TRD: https://github.com/tezos-reward-distributor-organization/tezos-reward-distributor
 - Credits to @loginwashere
 
 ## Installation
