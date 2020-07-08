@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  api:
+    build: .
+    restart: always
+    volumes:
+      - type: bind
+        source: ${CONFIG_HOST_PATH}
+        target: /usr/src/app/config
+        read_only: true
+    env_file:
+      - .env
+    ports:
+      - "${HOST_PORT}:${PORT}"
