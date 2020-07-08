@@ -11,19 +11,22 @@
 
 ## Installation
 
-- Install `Node.JS` - `sudo apt install nodejs`
-- Install `npm` - `sudo apt install npm`
+- Install `docker` - Info on how to install it on various systems could be found [here](https://docs.docker.com/get-docker/)
+  For example for Ubuntu 18.04 detailed instruction could be found [here](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04)
+- Install `docker-compose` - Info on how to install it on various systems could be found [here](https://docs.docker.com/compose/install/)
+  For example for Ubuntu 18.04 detailed instruction could be found [here](https://www.digitalocean.com/community/tutorials/how-to-install-docker-compose-on-ubuntu-18-04)
 - Clone repo in some folder
 - Copy `sample.env` into `.env` file - `cp sample.env .env`
-- Set path to config file `CONFIG_PATH`, and basic auth credentials `AUTH_LOGIN`, `AUTH_PASSWORD` in `.env` file
-- Install app dependencies - `npm install`
-- Install `pm2` to run app - `npm install -g pm2`
-- Start app - `pm2 start src/index.js --env production`
+- Set path to config file `CONFIG_HOST_PATH`, and basic auth credentials `AUTH_LOGIN`, `AUTH_PASSWORD` in `.env` file
+- Set `HOST` to `0.0.0.0` to be able to access api from other servers
+- Build app image - `docker-compose build`
+- Start app container `docker-compose up -d`
 
 ## Update
 
 - Pull changes from repo
-- Run - `pm2 restart src/index.js --env production`
+- Build app image - `docker-compose build`
+- Start app container `docker-compose up -d`
 
 ## Check out app
 
