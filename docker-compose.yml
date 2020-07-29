@@ -6,8 +6,8 @@ services:
     restart: always
     volumes:
       - type: bind
-        source: ${CONFIG_HOST_PATH}
-        target: /usr/src/app/config
+        source: $CONFIG_HOST_PATH
+        target: $CONFIG_PATH
         read_only: true
     env_file:
       - .env
