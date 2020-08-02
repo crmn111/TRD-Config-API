@@ -61,7 +61,7 @@ const prepareDocs = (doc) => {
 }
 
 const findByAddress = (docs, address) => {
-  return docs.filter(doc => doc.address === address)
+  return docs.filter(doc => doc.address === address)[0]
 }
 
 module.exports.index = (req, res) => {
@@ -73,7 +73,7 @@ module.exports.getOne = (req, res) => {
   const config = getConfig()
   const docs = prepareDocs(config)
   let info = findByAddress(docs, req.params.address)
-  if (!info.length) {
+  if (!info) {
     info = {
       type: TYPE_DEFAULT,
       address: req.params.address,
