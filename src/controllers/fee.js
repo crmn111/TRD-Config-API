@@ -74,11 +74,11 @@ module.exports.getOne = (req, res) => {
   const docs = prepareDocs(config)
   let info = findByAddress(docs, req.params.address)
   if (!info.length) {
-    info = {
+    info = [{
       type: TYPE_DEFAULT,
       address: req.params.address,
       service_fee: config.service_fee
-    }
+    }]
   }
   res.json(info)
 }
