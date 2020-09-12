@@ -8,7 +8,7 @@ services:
       - type: bind
         source: ${CONFIG_HOST_PATH}
         target: /usr/src/app/config
-        read_only: true
+        read_only: false
     env_file:
       - .env
     ports:
